@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +10,11 @@
 <body>
 
     <nav>
-        <div class="logo">Thabang Malele</div>
+        <div class="logo">Thabang<span>Malele</span></div>
 
         <ul>
             <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
@@ -22,69 +22,100 @@
     </nav>
 
     <section id="home" class="hero">
+        <div class="hero-glow"></div>
+
         <div class="hero-content">
-            <p class="section-tag">Developer • Builder • Problem Solver</p>
+            <p class="section-tag">Developer • Builder • Digital Problem Solver</p>
 
             <h1>
-                Digital products that
-                <span>solve real problems.</span>
+                Building digital systems for
+                <span>real-world problems.</span>
             </h1>
 
             <p class="hero-text">
-                Building websites, automation tools, AI-powered workflows,
-                and technical systems for individuals, creators, and small businesses.
+                Websites, automation tools, AI workflows, and practical tech solutions
+                for people and businesses that need things to just work.
             </p>
 
             <div class="hero-buttons">
-                <a href="#services" class="btn primary">View Services</a>
+                <a href="#projects" class="btn primary">View Projects</a>
                 <a href="#contact" class="btn secondary">Work With Me</a>
             </div>
         </div>
+
+        <div class="hero-card">
+            <div class="code-orb">&lt;/&gt;</div>
+            <p>Design. Build. Automate. Deploy.</p>
+        </div>
     </section>
 
-    <section id="services" class="section-dark">
+    <section id="projects" class="section-dark">
+        <div class="section-header">
+            <p class="section-tag">Projects</p>
+            <h2>Things I've Built</h2>
+            <p>
+                A small collection of practical websites and systems.
+                Each project has its own identity, purpose, and style.
+            </p>
+        </div>
+
+        <div class="project-grid">
+
+            <a href="https://hyenapopcorn.netlify.app/" class="project-card">
+                <span>01</span>
+                <h3>Hyena Popcorn</h3>
+                <p>A warm landing page for a local bulk popcorn business.</p>
+                <small>View Project →</small>
+            </a>
+
+            <a href="projects/lowquality/index.html" class="project-card">
+                <span>02</span>
+                <h3>LowQuality</h3>
+                <p>A bold black-and-white clothing brand website.</p>
+                <small>View Project →</small>
+            </a>
+
+            <a href="projects/hlatsi-bracelets/index.html" class="project-card">
+                <span>03</span>
+                <h3>HlatsiBracelets</h3>
+                <p>A soft handmade bracelet landing page with boutique energy.</p>
+                <small>View Project →</small>
+            </a>
+
+            <a href="projects/notes-app/index.html" class="project-card">
+                <span>04</span>
+                <h3>Notes App</h3>
+                <p>A structured web app concept for saving and managing notes.</p>
+                <small>View Project →</small>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="services" class="section-light">
         <div class="section-header">
             <p class="section-tag">Services</p>
-            <h2>What I Can Build For You</h2>
+            <h2>What I Can Build</h2>
             <p>
-                Practical digital solutions designed to save time,
-                improve workflow, and create a stronger online presence.
+                Practical digital solutions for individuals, creators,
+                students, and small businesses.
             </p>
         </div>
 
         <div class="card-grid">
             <div class="card">
                 <h3>Web Development</h3>
-                <p>Clean, responsive websites for portfolios, services, and small businesses.</p>
+                <p>Clean responsive websites for portfolios, brands, services, and local businesses.</p>
             </div>
 
             <div class="card">
                 <h3>Software Development</h3>
-                <p>Custom software solutions and system integrations tailored to your specific needs.</p>
+                <p>Custom tools, small systems, and application logic built around real needs.</p>
             </div>
 
             <div class="card">
                 <h3>Automation</h3>
-                <p>Scripts and tools that organize files, process data, and reduce repetitive computer tasks.</p>
-            </div>
-
-            <div class="card">
-                <h3>IT Support</h3>
-                <p>Technical troubleshooting, Windows support, software installation, and optimization.</p>
-            </div>
-
-            <div class="card">
-                <h3>Computer Systems</h3>
-                <p>Modern office or gaming computer assembly, setup, troubleshooting, and configuration using Windows or
-                    Linux.</p>
-            </div>
-
-            <div class="card">
-                <h3>Digital Consulting</h3>
-                <p>
-                    Guidance on technology decisions, software selection, and digital strategy for individuals and small
-                    businesses.
-                </p>
+                <p>Scripts that organize files, process data, and remove repetitive computer work.</p>
             </div>
 
             <div class="card">
@@ -93,29 +124,29 @@
             </div>
 
             <div class="card">
-                <h3>Network & Connectivity</h3>
-                <p>
-                    Home and small-business network setup, Wi-Fi optimization,
-                    device configuration, and connectivity troubleshooting.
-                </p>
+                <h3>IT Support</h3>
+                <p>Windows support, software installation, troubleshooting, optimization, and setup.</p>
             </div>
 
+            <div class="card">
+                <h3>Computer Systems</h3>
+                <p>PC building, configuration, Windows/Linux setup, upgrades, and troubleshooting.</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="contact section-light">
+    <section id="contact" class="contact section-dark">
         <div class="section-header">
             <p class="section-tag">Contact</p>
             <h2>Let's Build Something</h2>
             <p>
                 Have an idea, project, or technical problem?
-                Send me a message and let's talk.
+                Send me a message and let's figure it out.
             </p>
         </div>
 
         <form action="https://formspree.io/f/xaqgnopz" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
-
             <input type="email" name="email" placeholder="Your Email" required>
 
             <select name="budget" required>
@@ -133,34 +164,33 @@
         </form>
     </section>
 
-    <section id="about" class="about section-dark">
+    <section id="about" class="about section-light">
         <div class="section-header">
             <p class="section-tag">About</p>
             <h2>Hi, I'm Thabang.</h2>
         </div>
 
-        
-
         <div class="about-content">
             <p>
-                I'm a developer and technical problem solver who enjoys building useful digital tools.
-                My interests include software development, AI, automation, computer systems,
-                and creative problem-solving.
+                I'm a developer and technical problem solver who enjoys building useful,
+                practical digital tools. My interests include software development,
+                AI, automation, computer systems, and creative problem-solving.
             </p>
 
             <p>
-                I like working on practical things: websites that help people get noticed,
-                tools that save time, and systems that make technology easier to use.
+                I like building things that make life easier: websites that help people
+                get noticed, tools that save time, and systems that make technology feel
+                less annoying.
             </p>
         </div>
 
         <div class="social-links">
-            <a href="https://github.com/thabang-malele" target="_blank" aria-label="GitHub">
+            <a href="https://github.com/thabang-malele" target="_blank">
                 <img src="assets/icons/mdi--github.svg" alt="GitHub icon">
                 GitHub
             </a>
 
-            <a href="https://www.linkedin.com/in/thabangmalele/" target="_blank" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/thabangmalele/" target="_blank">
                 <img src="assets/icons/mdi--linkedin.svg" alt="LinkedIn icon">
                 LinkedIn
             </a>
@@ -173,5 +203,4 @@
     </footer>
 
 </body>
-
 </html>
